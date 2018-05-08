@@ -1,0 +1,90 @@
+:root {
+  --negro: black;
+  --negro-trasnparente: rgba(0, 0, 0, 0.6);
+  --gris-obscuro: #333;
+  --gris-claro: lightgray;
+  --blanco: white;
+}
+
+html {
+  background-color: var(--negro);
+}
+.navbar {
+  background-color: var(--negro-trasnparente);
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .logo {
+  align-self: flex-start;
+  width: 213px;
+  height: 43;
+}
+
+.buscador {
+  margin: auto;
+  text-align: center;
+}
+.buscador input {
+  height: 43px;
+  background-color: var(--gris-obscuro);
+  border-radius: 8px;
+  border: 2px;
+  color: var(--gris-claro);
+}
+
+.padding-h-md {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.padding-h-sm {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.margin-xs {
+  margin: 4px !important;
+}
+.margin-v-xl {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+.container {
+  display: flex;
+  margin: auto;
+  color: white;
+  width: 88%;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+.container .pelicula img {
+  width: 290px;
+  height: 163px;
+  flex: 4;
+}
+.container .pelicula:hover img {
+  opacity: 0.3;
+}
+
+.detalle-pelicula {
+  color: var(--blanco);
+  margin: auto;
+}
+
+.detalle-bloque {
+  width: 32%;
+  display: inline-block;
+}
+
+.detalle-bloque img {
+  max-width: 100%;
+}
+.label {
+  border: 2px solid;
+  border-color: var(--blanco);
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 14px;
+}
